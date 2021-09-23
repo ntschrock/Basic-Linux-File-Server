@@ -1,0 +1,35 @@
+npm init -y
+
+=====================> webpack <=======================
+npm i react react-dom -S // -S to save as dependencies
+npm i -D webpack webpack-cli // -D to save as dev dependencies
+npm i -D html-webpack-plugin html-loader
+npm i -D webpack-dev-server
+npm i -D @babel/core babel-loader @babel/preset-env
+npm i -D @babel/preset-react
+npm i -D file-loader
+npm i -D style-loader
+npm i -D css-loader
+npm i -D babel-preset-react
+npm i -D node-sass sass-loader mini-css-extract-plugin
+
+            {
+                test: /\.css$/,
+                use: [
+                    {
+                        loader: ["style-loader","css-loader"]
+                        // isProduction ? MiniCssExtractPlugin.loader : "style-loader"
+                    }
+                ]
+            },
+
+=====================> end webpack <==================
+npm install --save electron
+npm i pkg -g // for package node apps
+npm cache clean --force // tp clean cache, usefu when npm install gives error
+
+-g // for global installation
+http-server -o
+
+const Observer = require('../node_modules/Aprima-Observer/Observer/AutoitNativeAprimaObserver');
+mstsc
